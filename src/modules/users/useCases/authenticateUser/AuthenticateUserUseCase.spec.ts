@@ -60,7 +60,7 @@ describe("Authenticate User Use Case Test", () => {
     expect(async () => {
       await authenticateUserUseCase.execute({
         email: user.email,
-        password: "wrongPassword",
+        password: "",
       });
     }).rejects.toBeInstanceOf(IncorrectEmailOrPasswordError);
   });
