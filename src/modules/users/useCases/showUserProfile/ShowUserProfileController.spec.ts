@@ -7,7 +7,7 @@ import auth from "../../../../config/auth";
 let connection: Connection;
 const url = "/api/v1";
 
-describe("Create User Controller", () => {
+describe("Show User Profile Controller", () => {
   beforeAll(async () => {
     connection = await createConnection();
     await connection.runMigrations();
